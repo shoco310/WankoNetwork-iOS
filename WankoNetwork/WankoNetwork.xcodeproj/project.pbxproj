@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		775A27F229EEDD99005037D9 /* WankoNetworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A27F129EEDD99005037D9 /* WankoNetworkApp.swift */; };
+		775A27F429EEDD99005037D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A27F329EEDD99005037D9 /* ContentView.swift */; };
+		775A27F629EEDD9A005037D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775A27F529EEDD9A005037D9 /* Assets.xcassets */; };
+		775A27F929EEDD9A005037D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775A27F829EEDD9A005037D9 /* Preview Assets.xcassets */; };
+		775A27FB29EEDD9A005037D9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A27FA29EEDD9A005037D9 /* Persistence.swift */; };
+		775A27FE29EEDD9A005037D9 /* WankoNetwork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 775A27FC29EEDD9A005037D9 /* WankoNetwork.xcdatamodeld */; };
+		775A280829EEDD9B005037D9 /* WankoNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A280729EEDD9B005037D9 /* WankoNetworkTests.swift */; };
+		775A281229EEDD9B005037D9 /* WankoNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A281129EEDD9B005037D9 /* WankoNetworkUITests.swift */; };
+		775A281429EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A281329EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		775A280429EEDD9B005037D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775A27E629EEDD99005037D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 775A27ED29EEDD99005037D9;
+			remoteInfo = WankoNetwork;
+		};
+		775A280E29EEDD9B005037D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775A27E629EEDD99005037D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 775A27ED29EEDD99005037D9;
+			remoteInfo = WankoNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		775A27EE29EEDD99005037D9 /* WankoNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WankoNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		775A27F129EEDD99005037D9 /* WankoNetworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WankoNetworkApp.swift; sourceTree = "<group>"; };
+		775A27F329EEDD99005037D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		775A27F529EEDD9A005037D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		775A27F829EEDD9A005037D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		775A27FA29EEDD9A005037D9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		775A27FD29EEDD9A005037D9 /* WankoNetwork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WankoNetwork.xcdatamodel; sourceTree = "<group>"; };
+		775A280329EEDD9B005037D9 /* WankoNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WankoNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		775A280729EEDD9B005037D9 /* WankoNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WankoNetworkTests.swift; sourceTree = "<group>"; };
+		775A280D29EEDD9B005037D9 /* WankoNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WankoNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		775A281129EEDD9B005037D9 /* WankoNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WankoNetworkUITests.swift; sourceTree = "<group>"; };
+		775A281329EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WankoNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		775A27EB29EEDD99005037D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775A280029EEDD9B005037D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775A280A29EEDD9B005037D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		775A27E529EEDD99005037D9 = {
+			isa = PBXGroup;
+			children = (
+				775A27F029EEDD99005037D9 /* WankoNetwork */,
+				775A280629EEDD9B005037D9 /* WankoNetworkTests */,
+				775A281029EEDD9B005037D9 /* WankoNetworkUITests */,
+				775A27EF29EEDD99005037D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		775A27EF29EEDD99005037D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				775A27EE29EEDD99005037D9 /* WankoNetwork.app */,
+				775A280329EEDD9B005037D9 /* WankoNetworkTests.xctest */,
+				775A280D29EEDD9B005037D9 /* WankoNetworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		775A27F029EEDD99005037D9 /* WankoNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				775A27F129EEDD99005037D9 /* WankoNetworkApp.swift */,
+				775A27F329EEDD99005037D9 /* ContentView.swift */,
+				775A27F529EEDD9A005037D9 /* Assets.xcassets */,
+				775A27FA29EEDD9A005037D9 /* Persistence.swift */,
+				775A27FC29EEDD9A005037D9 /* WankoNetwork.xcdatamodeld */,
+				775A27F729EEDD9A005037D9 /* Preview Content */,
+			);
+			path = WankoNetwork;
+			sourceTree = "<group>";
+		};
+		775A27F729EEDD9A005037D9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				775A27F829EEDD9A005037D9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		775A280629EEDD9B005037D9 /* WankoNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				775A280729EEDD9B005037D9 /* WankoNetworkTests.swift */,
+			);
+			path = WankoNetworkTests;
+			sourceTree = "<group>";
+		};
+		775A281029EEDD9B005037D9 /* WankoNetworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				775A281129EEDD9B005037D9 /* WankoNetworkUITests.swift */,
+				775A281329EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift */,
+			);
+			path = WankoNetworkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		775A27ED29EEDD99005037D9 /* WankoNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775A281729EEDD9B005037D9 /* Build configuration list for PBXNativeTarget "WankoNetwork" */;
+			buildPhases = (
+				775A27EA29EEDD99005037D9 /* Sources */,
+				775A27EB29EEDD99005037D9 /* Frameworks */,
+				775A27EC29EEDD99005037D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WankoNetwork;
+			productName = WankoNetwork;
+			productReference = 775A27EE29EEDD99005037D9 /* WankoNetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		775A280229EEDD9B005037D9 /* WankoNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775A281A29EEDD9B005037D9 /* Build configuration list for PBXNativeTarget "WankoNetworkTests" */;
+			buildPhases = (
+				775A27FF29EEDD9B005037D9 /* Sources */,
+				775A280029EEDD9B005037D9 /* Frameworks */,
+				775A280129EEDD9B005037D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				775A280529EEDD9B005037D9 /* PBXTargetDependency */,
+			);
+			name = WankoNetworkTests;
+			productName = WankoNetworkTests;
+			productReference = 775A280329EEDD9B005037D9 /* WankoNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		775A280C29EEDD9B005037D9 /* WankoNetworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775A281D29EEDD9B005037D9 /* Build configuration list for PBXNativeTarget "WankoNetworkUITests" */;
+			buildPhases = (
+				775A280929EEDD9B005037D9 /* Sources */,
+				775A280A29EEDD9B005037D9 /* Frameworks */,
+				775A280B29EEDD9B005037D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				775A280F29EEDD9B005037D9 /* PBXTargetDependency */,
+			);
+			name = WankoNetworkUITests;
+			productName = WankoNetworkUITests;
+			productReference = 775A280D29EEDD9B005037D9 /* WankoNetworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		775A27E629EEDD99005037D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					775A27ED29EEDD99005037D9 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					775A280229EEDD9B005037D9 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 775A27ED29EEDD99005037D9;
+					};
+					775A280C29EEDD9B005037D9 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 775A27ED29EEDD99005037D9;
+					};
+				};
+			};
+			buildConfigurationList = 775A27E929EEDD99005037D9 /* Build configuration list for PBXProject "WankoNetwork" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 775A27E529EEDD99005037D9;
+			productRefGroup = 775A27EF29EEDD99005037D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				775A27ED29EEDD99005037D9 /* WankoNetwork */,
+				775A280229EEDD9B005037D9 /* WankoNetworkTests */,
+				775A280C29EEDD9B005037D9 /* WankoNetworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		775A27EC29EEDD99005037D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775A27F929EEDD9A005037D9 /* Preview Assets.xcassets in Resources */,
+				775A27F629EEDD9A005037D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775A280129EEDD9B005037D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775A280B29EEDD9B005037D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		775A27EA29EEDD99005037D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775A27FB29EEDD9A005037D9 /* Persistence.swift in Sources */,
+				775A27F429EEDD99005037D9 /* ContentView.swift in Sources */,
+				775A27F229EEDD99005037D9 /* WankoNetworkApp.swift in Sources */,
+				775A27FE29EEDD9A005037D9 /* WankoNetwork.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775A27FF29EEDD9B005037D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775A280829EEDD9B005037D9 /* WankoNetworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775A280929EEDD9B005037D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775A281429EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift in Sources */,
+				775A281229EEDD9B005037D9 /* WankoNetworkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		775A280529EEDD9B005037D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 775A27ED29EEDD99005037D9 /* WankoNetwork */;
+			targetProxy = 775A280429EEDD9B005037D9 /* PBXContainerItemProxy */;
+		};
+		775A280F29EEDD9B005037D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 775A27ED29EEDD99005037D9 /* WankoNetwork */;
+			targetProxy = 775A280E29EEDD9B005037D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		775A281529EEDD9B005037D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		775A281629EEDD9B005037D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		775A281829EEDD9B005037D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WankoNetwork/Preview Content\"";
+				DEVELOPMENT_TEAM = NVG4L28J9M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = style.function.WankoNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		775A281929EEDD9B005037D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WankoNetwork/Preview Content\"";
+				DEVELOPMENT_TEAM = NVG4L28J9M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = style.function.WankoNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		775A281B29EEDD9B005037D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVG4L28J9M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = style.function.WankoNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WankoNetwork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WankoNetwork";
+			};
+			name = Debug;
+		};
+		775A281C29EEDD9B005037D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVG4L28J9M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = style.function.WankoNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WankoNetwork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WankoNetwork";
+			};
+			name = Release;
+		};
+		775A281E29EEDD9B005037D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVG4L28J9M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = style.function.WankoNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WankoNetwork;
+			};
+			name = Debug;
+		};
+		775A281F29EEDD9B005037D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVG4L28J9M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = style.function.WankoNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WankoNetwork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		775A27E929EEDD99005037D9 /* Build configuration list for PBXProject "WankoNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775A281529EEDD9B005037D9 /* Debug */,
+				775A281629EEDD9B005037D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775A281729EEDD9B005037D9 /* Build configuration list for PBXNativeTarget "WankoNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775A281829EEDD9B005037D9 /* Debug */,
+				775A281929EEDD9B005037D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775A281A29EEDD9B005037D9 /* Build configuration list for PBXNativeTarget "WankoNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775A281B29EEDD9B005037D9 /* Debug */,
+				775A281C29EEDD9B005037D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775A281D29EEDD9B005037D9 /* Build configuration list for PBXNativeTarget "WankoNetworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775A281E29EEDD9B005037D9 /* Debug */,
+				775A281F29EEDD9B005037D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		775A27FC29EEDD9A005037D9 /* WankoNetwork.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				775A27FD29EEDD9A005037D9 /* WankoNetwork.xcdatamodel */,
+			);
+			currentVersion = 775A27FD29EEDD9A005037D9 /* WankoNetwork.xcdatamodel */;
+			path = WankoNetwork.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 775A27E629EEDD99005037D9 /* Project object */;
+}
