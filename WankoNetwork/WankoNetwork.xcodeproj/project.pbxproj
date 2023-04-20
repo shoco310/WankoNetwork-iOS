@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		775A27F229EEDD99005037D9 /* WankoNetworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A27F129EEDD99005037D9 /* WankoNetworkApp.swift */; };
-		775A27F429EEDD99005037D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A27F329EEDD99005037D9 /* ContentView.swift */; };
 		775A27F629EEDD9A005037D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775A27F529EEDD9A005037D9 /* Assets.xcassets */; };
 		775A27F929EEDD9A005037D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775A27F829EEDD9A005037D9 /* Preview Assets.xcassets */; };
 		775A27FB29EEDD9A005037D9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A27FA29EEDD9A005037D9 /* Persistence.swift */; };
@@ -16,6 +15,7 @@
 		775A280829EEDD9B005037D9 /* WankoNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A280729EEDD9B005037D9 /* WankoNetworkTests.swift */; };
 		775A281229EEDD9B005037D9 /* WankoNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A281129EEDD9B005037D9 /* WankoNetworkUITests.swift */; };
 		775A281429EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A281329EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift */; };
+		775A282329F15A4C005037D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A282229F15A4C005037D9 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		775A27EE29EEDD99005037D9 /* WankoNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WankoNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		775A27F129EEDD99005037D9 /* WankoNetworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WankoNetworkApp.swift; sourceTree = "<group>"; };
-		775A27F329EEDD99005037D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		775A27F529EEDD9A005037D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		775A27F829EEDD9A005037D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		775A27FA29EEDD9A005037D9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		775A280D29EEDD9B005037D9 /* WankoNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WankoNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		775A281129EEDD9B005037D9 /* WankoNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WankoNetworkUITests.swift; sourceTree = "<group>"; };
 		775A281329EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WankoNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		775A282229F15A4C005037D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				775A27F129EEDD99005037D9 /* WankoNetworkApp.swift */,
-				775A27F329EEDD99005037D9 /* ContentView.swift */,
 				775A27F529EEDD9A005037D9 /* Assets.xcassets */,
 				775A27FA29EEDD9A005037D9 /* Persistence.swift */,
 				775A27FC29EEDD9A005037D9 /* WankoNetwork.xcdatamodeld */,
 				775A27F729EEDD9A005037D9 /* Preview Content */,
+				775A282229F15A4C005037D9 /* ContentView.swift */,
 			);
 			path = WankoNetwork;
 			sourceTree = "<group>";
@@ -264,8 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				775A27FB29EEDD9A005037D9 /* Persistence.swift in Sources */,
-				775A27F429EEDD99005037D9 /* ContentView.swift in Sources */,
 				775A27F229EEDD99005037D9 /* WankoNetworkApp.swift in Sources */,
+				775A282329F15A4C005037D9 /* ContentView.swift in Sources */,
 				775A27FE29EEDD9A005037D9 /* WankoNetwork.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

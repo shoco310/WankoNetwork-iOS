@@ -2,7 +2,7 @@
 //  Persistence.swift
 //  WankoNetwork
 //
-//  Created by JP26309 on 2023/04/18.
+//  Created by satoshoco on 2023/04/18.
 //
 
 import CoreData
