@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F82" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Dog" representedClassName="Dog" syncable="YES">
+        <attribute name="home" optional="YES" attributeType="String"/>
+        <attribute name="memo" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="Binary"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="thumbanails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Thumbnail" inverseName="dog" inverseEntity="Thumbnail"/>
+    </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
+    <entity name="Thumbnail" representedClassName="Thumbnail" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="dog" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Dog" inverseName="thumbanails" inverseEntity="Dog"/>
+    </entity>
 </model>

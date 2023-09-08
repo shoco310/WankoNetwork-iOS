@@ -16,6 +16,15 @@
 		775A281229EEDD9B005037D9 /* WankoNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A281129EEDD9B005037D9 /* WankoNetworkUITests.swift */; };
 		775A281429EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A281329EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift */; };
 		775A282329F15A4C005037D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A282229F15A4C005037D9 /* ContentView.swift */; };
+		77E5E2052AAB684B0057DA4D /* Dog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E2012AAB684B0057DA4D /* Dog+CoreDataClass.swift */; };
+		77E5E2062AAB684B0057DA4D /* Dog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E2022AAB684B0057DA4D /* Dog+CoreDataProperties.swift */; };
+		77E5E2072AAB684B0057DA4D /* Thumbnail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E2032AAB684B0057DA4D /* Thumbnail+CoreDataClass.swift */; };
+		77E5E2082AAB684B0057DA4D /* Thumbnail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E2042AAB684B0057DA4D /* Thumbnail+CoreDataProperties.swift */; };
+		77E5E20A2AAB68A80057DA4D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E2092AAB68A80057DA4D /* HomeView.swift */; };
+		77E5E20C2AAB69090057DA4D /* DogFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E20B2AAB69090057DA4D /* DogFormView.swift */; };
+		77E5E20E2AAB692D0057DA4D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E20D2AAB692D0057DA4D /* DetailView.swift */; };
+		77E5E2102AAB77B10057DA4D /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E20F2AAB77B10057DA4D /* ProfileDetailView.swift */; };
+		77E5E2122AAB82440057DA4D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E2112AAB82440057DA4D /* TitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +57,16 @@
 		775A281129EEDD9B005037D9 /* WankoNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WankoNetworkUITests.swift; sourceTree = "<group>"; };
 		775A281329EEDD9B005037D9 /* WankoNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WankoNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		775A282229F15A4C005037D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		77E5E2012AAB684B0057DA4D /* Dog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77E5E2022AAB684B0057DA4D /* Dog+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dog+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		77E5E2032AAB684B0057DA4D /* Thumbnail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thumbnail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77E5E2042AAB684B0057DA4D /* Thumbnail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thumbnail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		77E5E2092AAB68A80057DA4D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		77E5E20B2AAB69090057DA4D /* DogFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFormView.swift; sourceTree = "<group>"; };
+		77E5E20D2AAB692D0057DA4D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		77E5E20F2AAB77B10057DA4D /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
+		77E5E2112AAB82440057DA4D /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		77E5E2132AAB8DB50057DA4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +97,10 @@
 		775A27E529EEDD99005037D9 = {
 			isa = PBXGroup;
 			children = (
+				77E5E2012AAB684B0057DA4D /* Dog+CoreDataClass.swift */,
+				77E5E2022AAB684B0057DA4D /* Dog+CoreDataProperties.swift */,
+				77E5E2032AAB684B0057DA4D /* Thumbnail+CoreDataClass.swift */,
+				77E5E2042AAB684B0057DA4D /* Thumbnail+CoreDataProperties.swift */,
 				775A27F029EEDD99005037D9 /* WankoNetwork */,
 				775A280629EEDD9B005037D9 /* WankoNetworkTests */,
 				775A281029EEDD9B005037D9 /* WankoNetworkUITests */,
@@ -98,12 +121,18 @@
 		775A27F029EEDD99005037D9 /* WankoNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				77E5E2132AAB8DB50057DA4D /* Info.plist */,
 				775A27F129EEDD99005037D9 /* WankoNetworkApp.swift */,
 				775A27F529EEDD9A005037D9 /* Assets.xcassets */,
 				775A27FA29EEDD9A005037D9 /* Persistence.swift */,
 				775A27FC29EEDD9A005037D9 /* WankoNetwork.xcdatamodeld */,
 				775A27F729EEDD9A005037D9 /* Preview Content */,
 				775A282229F15A4C005037D9 /* ContentView.swift */,
+				77E5E20F2AAB77B10057DA4D /* ProfileDetailView.swift */,
+				77E5E2092AAB68A80057DA4D /* HomeView.swift */,
+				77E5E20B2AAB69090057DA4D /* DogFormView.swift */,
+				77E5E20D2AAB692D0057DA4D /* DetailView.swift */,
+				77E5E2112AAB82440057DA4D /* TitleView.swift */,
 			);
 			path = WankoNetwork;
 			sourceTree = "<group>";
@@ -263,9 +292,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E5E20A2AAB68A80057DA4D /* HomeView.swift in Sources */,
+				77E5E2072AAB684B0057DA4D /* Thumbnail+CoreDataClass.swift in Sources */,
+				77E5E2062AAB684B0057DA4D /* Dog+CoreDataProperties.swift in Sources */,
 				775A27FB29EEDD9A005037D9 /* Persistence.swift in Sources */,
+				77E5E2052AAB684B0057DA4D /* Dog+CoreDataClass.swift in Sources */,
+				77E5E2102AAB77B10057DA4D /* ProfileDetailView.swift in Sources */,
+				77E5E20E2AAB692D0057DA4D /* DetailView.swift in Sources */,
+				77E5E20C2AAB69090057DA4D /* DogFormView.swift in Sources */,
+				77E5E2082AAB684B0057DA4D /* Thumbnail+CoreDataProperties.swift in Sources */,
 				775A27F229EEDD99005037D9 /* WankoNetworkApp.swift in Sources */,
 				775A282329F15A4C005037D9 /* ContentView.swift in Sources */,
+				77E5E2122AAB82440057DA4D /* TitleView.swift in Sources */,
 				775A27FE29EEDD9A005037D9 /* WankoNetwork.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +466,9 @@
 				DEVELOPMENT_TEAM = NVG4L28J9M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WankoNetwork/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを使用して写真を撮影します。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "フォトライブラリから写真を選択します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +498,9 @@
 				DEVELOPMENT_TEAM = NVG4L28J9M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WankoNetwork/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを使用して写真を撮影します。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "フォトライブラリから写真を選択します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
