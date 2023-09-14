@@ -2,7 +2,7 @@
 //  Dog+CoreDataProperties.swift
 //  WankoNetwork
 //
-//  Created by satoshoco on 2023/09/08.
+//  Created by satoshoco on 2023/09/10.
 //
 //
 
@@ -16,11 +16,13 @@ extension Dog {
         return NSFetchRequest<Dog>(entityName: "Dog")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var type: String?
     @NSManaged public var home: String?
-    @NSManaged public var photo: Data?
     @NSManaged public var memo: String?
+    @NSManaged public var name: String?
+    @NSManaged public var photo: Data?
+    @NSManaged public var type: String?
+    @NSManaged public var age: Int16
+    @NSManaged public var gender: String?
     @NSManaged public var thumbanails: NSSet?
 
 }

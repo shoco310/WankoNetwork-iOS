@@ -14,7 +14,7 @@ struct WankoNetworkApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            HomeView()
+            MainTabView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

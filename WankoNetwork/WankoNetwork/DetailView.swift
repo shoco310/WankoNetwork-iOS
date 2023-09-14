@@ -11,70 +11,167 @@ struct DetailView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @State var showActionSheet = false
     @State var showEditView = false
-    var dog: Dog
+    @ObservedObject var dog: Dog
+    
     
     var defaultDogImage: UIImage {
         UIImage(named: "defaultDogImage") ?? UIImage()
     }
+    
+    
     var body: some View {
         NavigationView {
             VStack {
-                Image(uiImage: UIImage(data: dog.photo ?? Data()) ?? UIImage())
-                    .resizable()
-                    .scaledToFit()
-                Text(dog.name ?? "")
-                Text(dog.home ?? "")
-                Text(dog.type ?? "")
-                Text(dog.memo ?? "")
                 
-                //            if let thumbnails = dog.thumbnails?.allObjects as? [Thumbnail], !thumbnails.isEmpty {
-                //                ScrollView {
-                //                    ForEach(thumbnails, id: \.self) { thumbnail in
-                //                        if let imageData = thumbnail.imageData, let uiImage = UIImage(data: imageData) {
-                //                            Image(uiImage: uiImage)
-                //                                .resizable()
-                //                                .scaledToFit()
-                //                        } else {
-                //                            // 画像がない場合の代替コンテンツ
-                //                            Image(systemName: "photo")
-                //                                .resizable()
-                //                                .scaledToFit()
-                //                                .foregroundColor(.gray)
+                    Image(uiImage: UIImage(data: dog.photo ?? Data()) ?? UIImage(named: "wanko-sample")!)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 250)
+                        .clipShape(Rectangle())
+               
+                
+                List{
+                    Section(header: Text("PROFILE").font(.headline)) {
+                        
+                        HStack{
+                            Image(systemName: "person.fill").foregroundColor(.gray)
+                            Text("Name").font(.subheadline).foregroundColor(.gray)
+                            Text(dog.name ?? "")
+                            
+                        }
+                        HStack{
+                            Image(systemName: "location.circle").foregroundColor(.gray)
+                            Text("Place").font(.subheadline).foregroundColor(.gray)
+                            Text(dog.home ?? "")
+                            
+                        }
+                        HStack{
+                            Image(systemName: "paperclip").foregroundColor(.gray)
+                            Text("Breeds").font(.subheadline).foregroundColor(.gray)
+                            Text(dog.type ?? "")
+                            
+                        }
+                        
+                        HStack{
+                            Image(systemName: "calendar").foregroundColor(.gray)
+                            Text("Age").font(.subheadline).foregroundColor(.gray)
+                            Text("\(dog.age)")
+                            
+                        }
+                        HStack{
+                            Image(systemName: "person.crop.circle").foregroundColor(.gray)
+                            Text("Gender").font(.subheadline).foregroundColor(.gray)
+                            Text(dog.gender ?? "")
+                            
+                        }
+                        
+                    }
+                    Section(header: Text("DETAIL").font(.headline)) {
+                        HStack{
+                            Image(systemName: "note.text").foregroundColor(.gray)
+                            Text("Memo").font(.subheadline).foregroundColor(.gray)
+                            Text(dog.memo ?? "")
+                            
+                        }
+                        
+                    }
+                    
+                }
+                .background {
+                    Color.white
+                }
+                .frame(maxWidth: .infinity)
+                .frame(maxHeight: .infinity)
+                Spacer()
+                
+                
+                //                if let thumbnails = dog.thumbnails?.allObjects as? [Thumbnail], !thumbnails.isEmpty {
+                //                    ScrollView {
+                //                        ForEach(thumbnails, id: \.self) { thumbnail in
+                //                            if let imageData = thumbnail.imageData, let uiImage = UIImage(data: imageData) {
+                //                                Image(uiImage: uiImage)
+                //                                    .resizable()
+                //                                    .scaledToFit()
+                //                            } else {
+                //                                // 画像がない場合の代替コンテンツ
+                //                                Image(systemName: "photo")
+                //                                    .resizable()
+                //                                    .scaledToFit()
+                //                                    .foregroundColor(.gray)
+                //                            }
                 //                        }
                 //                    }
                 //                }
-                //            }
-            }
-            .navigationBarTitle(dog.name ?? "名前不明", displayMode: .inline)
-            .navigationBarItems(trailing:
-                                    Button(action: {
-                self.showActionSheet = true
-            }) {
-                Image(systemName: "ellipsis.circle.fill")
-            }
+                
+                Spacer()
+                // ボタンを追加
+                Button(action: {
+                    self.showActionSheet = true
+                }) {
+                    Text("Edit")
+                    //Image(systemName: "ellipsis.vertical")
+                        .padding()
+                        .background(Color("mainColor"))
+                        .cornerRadius(10)
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                }
                 .actionSheet(isPresented: $showActionSheet) {
-                    ActionSheet(title: Text("オプション"), buttons: [
-                        .default(Text("編集"), action: {
+                    ActionSheet(title: Text("Option"), buttons: [
+                        .default(Text("Edit"), action: {
                             self.showEditView = true
                         }),
-                        .destructive(Text("削除"), action: deleteDog),
+                        .destructive(Text("Delete"), action: deleteDog),
                         .cancel()
                     ])
                 }
-            )
+            }
+            .background(Color("mainColor"))
+            // .navigationTitle(dog.name ?? "")
+            //.navigationBarTitleDisplayMode(.inline)
+            
+            //            .toolbar {
+            //                ToolbarItem(placement: .navigationBarTrailing) {
+            //                    Button {
+            //
+            //                    } label: {
+            //                        Text("右側に表示")
+            //                    }
+            //
+            //                }
+            //            }.offset(y: -50)
+            //            .navigationBarItems(trailing: Button(action: {
+            //                self.showActionSheet = true
+            //            }) {
+            //                Image(systemName: "ellipsis").foregroundColor(.white)
+            //            }
+            //            .actionSheet(isPresented: $showActionSheet) {
+            //                ActionSheet(title: Text("Option"), buttons: [
+            //                    .default(Text("Edit"), action: {
+            //                        self.showEditView = true
+            //                    }),
+            //                    .destructive(Text("Delete"), action: deleteDog),
+            //                    .cancel()
+            //                ])
+            //            })
+            //
         }
+        
+        .accentColor(.white)
         .sheet(isPresented: $showEditView) {
             DogFormView(dog: dog)
-       }
+        }
+        .background(Color("mainColor"))
         
     }
     func deleteDog() {
-            self.managedObjectContext.delete(dog)
-            do {
-                try self.managedObjectContext.save()
-            } catch {
-                print("削除中のエラー: \(error)")
-            }
-            // この後、前の画面に戻る動作が必要かもしれません。
+        self.managedObjectContext.delete(dog)
+        do {
+            try self.managedObjectContext.save()
+        } catch {
+            print("削除中のエラー: \(error)")
         }
+    }
 }

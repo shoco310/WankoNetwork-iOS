@@ -12,9 +12,8 @@ struct TitleView: View {
     let titleName: String
 
     var body: some View {
-           
-                image.resizable().frame(width: 30, height: 30)
-                
+                image.resizable().frame(width: 30, height: 25)
+                .scaledToFill()
 
     }
 }
