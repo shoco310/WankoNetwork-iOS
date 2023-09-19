@@ -27,13 +27,13 @@ struct ProfileEditView: View {
     @State private var ageString: String = ""
     @State private var gender: String = ""
     @State private var memo: String = ""
-
+    
     @State private var editingProfile: Profile?
     
     init(profile: Binding<Profile?>, isEditing: Binding<Bool>) {
-            self._profile = profile
-            self._isEditing = isEditing
-            self.editingProfile = profile.wrappedValue
+        self._profile = profile
+        self._isEditing = isEditing
+        self.editingProfile = profile.wrappedValue
     }
     
     var body: some View {
@@ -94,13 +94,12 @@ struct ProfileEditView: View {
                     
                     HStack{
                         Image(systemName: "calendar").foregroundColor(.gray)
-                            TextField("Age", text: $ageString)
-                                .onChange(of: ageString) { newValue in
-                                    if let intValue = Int16(newValue) {
-                                        editingProfile?.age = intValue
-                                    }
+                        TextField("Age", text: $ageString)
+                            .onChange(of: ageString) { newValue in
+                                if let intValue = Int16(newValue) {
+                                    editingProfile?.age = intValue
                                 }
-                        
+                            }
                     }
                     
                     HStack{
@@ -136,7 +135,7 @@ struct ProfileEditView: View {
                     .foregroundColor(.white)
                     .fontWeight(.bold)
             }
- 
+            
         }
         .background(Color("mainColor"))
         .actionSheet(isPresented: $showActionSheet) {
@@ -159,27 +158,27 @@ struct ProfileEditView: View {
         .onAppear {
             self.editingProfile = profile
             if let profileData = editingProfile {
-                   name = profileData.name ?? ""
-                   home = profileData.home ?? ""
-                   type = profileData.type ?? ""
-                   memo = profileData.memo ?? ""
-                   ageString = "\(profileData.age)"
-                   gender = profileData.gender ?? ""
-               }
+                name = profileData.name ?? ""
+                home = profileData.home ?? ""
+                type = profileData.type ?? ""
+                memo = profileData.memo ?? ""
+                ageString = "\(profileData.age)"
+                gender = profileData.gender ?? ""
+            }
         }
         
     }
-
+    
     func saveProfile() {
         print("editingProfile: \(String(describing: editingProfile))")
         let profileToSave: Profile
-
-            if let profile = editingProfile {
-                profileToSave = profile
-            } else {
-                deleteExistingProfiles()
-                profileToSave = Profile(context: managedObjectContext)
-            }
+        
+        if let profile = editingProfile {
+            profileToSave = profile
+        } else {
+            deleteExistingProfiles()
+            profileToSave = Profile(context: managedObjectContext)
+        }
         managedObjectContext.performAndWait {
             profileToSave.name = name
             profileToSave.home = home
@@ -187,13 +186,13 @@ struct ProfileEditView: View {
             profileToSave.memo = memo
             profileToSave.gender = gender
             saveProfilePhoto()  // 写真を保存
-
+            
             if let intAge = Int16(ageString) {
                 profileToSave.age = intAge
-                } else {
-                    print("年齢の入力が不正です")
-                    return
-                }
+            } else {
+                print("年齢の入力が不正です")
+                return
+            }
             
             print("Saving context...")
             do {
@@ -206,13 +205,32 @@ struct ProfileEditView: View {
         }
     }
     
+    func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
+        let size = image.size
+        let widthRatio  = targetSize.width  / size.width
+        let heightRatio = targetSize.height / size.height
+        let scaleFactor = min(widthRatio, heightRatio)
+        let scaledSize = CGSize(width: size.width * scaleFactor, height: size.height * scaleFactor)
+        let rect = CGRect(x: 0, y: 0, width: scaledSize.width, height: scaledSize.height)
+        
+        UIGraphicsBeginImageContextWithOptions(scaledSize, false, 1.0)
+        image.draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
+    }
+
     func saveProfilePhoto() {
         print("saveProfilePhoto called")
-        if let image = photo, let imageData = image.jpegData(compressionQuality: 1.0) {
-            //profile?.photo = imageData
-            editingProfile?.photo = imageData
+        if let image = photo {
+            let resizedImage = resizeImage(image: image, targetSize: CGSize(width: 250, height: 250))
+            if let imageData = resizedImage.jpegData(compressionQuality: 0.6) {
+                editingProfile?.photo = imageData
+            }
         }
     }
+
     func deleteExistingProfiles() {
         let fetchRequest: NSFetchRequest<Profile> = Profile.fetchRequest()
         do {

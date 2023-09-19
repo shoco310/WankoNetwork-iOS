@@ -30,6 +30,10 @@
 		77E5E2192AAC91F60057DA4D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E2182AAC91F60057DA4D /* MenuView.swift */; };
 		77E5E21B2AACBCE00057DA4D /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E21A2AACBCE00057DA4D /* ProfileEditView.swift */; };
 		77E5E21E2AB35A2E0057DA4D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E21D2AB35A2E0057DA4D /* MainTabView.swift */; };
+		77E5E2202AB5D4830057DA4D /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E21F2AB5D4830057DA4D /* QRScannerView.swift */; };
+		77E5E2232AB5EFEA0057DA4D /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E2222AB5EFEA0057DA4D /* QRCodeView.swift */; };
+		77E5E2252AB5F0170057DA4D /* QRFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E2242AB5F0170057DA4D /* QRFormView.swift */; };
+		77E5E2272AB5F4A90057DA4D /* ProfileEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5E2262AB5F4A90057DA4D /* ProfileEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		77E5E2182AAC91F60057DA4D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		77E5E21A2AACBCE00057DA4D /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
 		77E5E21D2AB35A2E0057DA4D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		77E5E21F2AB5D4830057DA4D /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		77E5E2222AB5EFEA0057DA4D /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		77E5E2242AB5F0170057DA4D /* QRFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRFormView.swift; sourceTree = "<group>"; };
+		77E5E2262AB5F4A90057DA4D /* ProfileEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,7 @@
 				77E5E21D2AB35A2E0057DA4D /* MainTabView.swift */,
 				77E5E2112AAB82440057DA4D /* TitleView.swift */,
 				77E5E21C2AAD5C1D0057DA4D /* Profile */,
+				77E5E2212AB5EFDB0057DA4D /* QR */,
 			);
 			path = WankoNetwork;
 			sourceTree = "<group>";
@@ -183,6 +192,17 @@
 				77E5E20F2AAB77B10057DA4D /* ProfileDetailView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		77E5E2212AB5EFDB0057DA4D /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				77E5E21F2AB5D4830057DA4D /* QRScannerView.swift */,
+				77E5E2222AB5EFEA0057DA4D /* QRCodeView.swift */,
+				77E5E2242AB5F0170057DA4D /* QRFormView.swift */,
+				77E5E2262AB5F4A90057DA4D /* ProfileEncoder.swift */,
+			);
+			path = QR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,10 +346,14 @@
 				77E5E2172AAC5D6D0057DA4D /* Profile+CoreDataProperties.swift in Sources */,
 				77E5E20C2AAB69090057DA4D /* DogFormView.swift in Sources */,
 				77E5E2192AAC91F60057DA4D /* MenuView.swift in Sources */,
+				77E5E2252AB5F0170057DA4D /* QRFormView.swift in Sources */,
+				77E5E2272AB5F4A90057DA4D /* ProfileEncoder.swift in Sources */,
 				77E5E21E2AB35A2E0057DA4D /* MainTabView.swift in Sources */,
+				77E5E2232AB5EFEA0057DA4D /* QRCodeView.swift in Sources */,
 				77E5E2082AAB684B0057DA4D /* Thumbnail+CoreDataProperties.swift in Sources */,
 				77E5E2162AAC5D6D0057DA4D /* Profile+CoreDataClass.swift in Sources */,
 				775A27F229EEDD99005037D9 /* WankoNetworkApp.swift in Sources */,
+				77E5E2202AB5D4830057DA4D /* QRScannerView.swift in Sources */,
 				775A282329F15A4C005037D9 /* ContentView.swift in Sources */,
 				77E5E2122AAB82440057DA4D /* TitleView.swift in Sources */,
 				775A27FE29EEDD9A005037D9 /* WankoNetwork.xcdatamodeld in Sources */,

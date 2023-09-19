@@ -129,34 +129,6 @@ struct DetailView: View {
                 }
             }
             .background(Color("mainColor"))
-            // .navigationTitle(dog.name ?? "")
-            //.navigationBarTitleDisplayMode(.inline)
-            
-            //            .toolbar {
-            //                ToolbarItem(placement: .navigationBarTrailing) {
-            //                    Button {
-            //
-            //                    } label: {
-            //                        Text("右側に表示")
-            //                    }
-            //
-            //                }
-            //            }.offset(y: -50)
-            //            .navigationBarItems(trailing: Button(action: {
-            //                self.showActionSheet = true
-            //            }) {
-            //                Image(systemName: "ellipsis").foregroundColor(.white)
-            //            }
-            //            .actionSheet(isPresented: $showActionSheet) {
-            //                ActionSheet(title: Text("Option"), buttons: [
-            //                    .default(Text("Edit"), action: {
-            //                        self.showEditView = true
-            //                    }),
-            //                    .destructive(Text("Delete"), action: deleteDog),
-            //                    .cancel()
-            //                ])
-            //            })
-            //
         }
         
         .accentColor(.white)
